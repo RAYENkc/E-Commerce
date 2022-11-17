@@ -1,0 +1,26 @@
+﻿@model TP_Ecommerce.Models.Marque
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Marque</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NameMrq)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameMrq)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDMrq }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
